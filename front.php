@@ -147,8 +147,8 @@
           success: function (response) {
             // Supondo que o response seja um JSON com os dados e registros
             $('#modalMessage').html('Lista de alertas atualizada com sucesso!');
-            let records = response.records; // Substitua pelo caminho correto
-            $('#recordsList').empty(); // Limpar lista antes de adicionar novos itens
+            let records = response.records; 
+            $('#recordsList').empty(); 
 
             records.forEach(function (record) {
               $('#recordsList').append('<li>' + record.date_alarm + ' - ' + record.text + '</li>');
