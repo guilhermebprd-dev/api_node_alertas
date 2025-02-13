@@ -1,23 +1,38 @@
 # Dependências do Node.js
 node_modules/
 
-# Logs
+# Logs e arquivos temporários
 npm-debug.log*
 yarn-debug.log*
 pnpm-debug.log*
 lerna-debug.log*
+debug.log
+*.log
 
-# Diretórios do Editor/IDE
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Cache do editor/IDE
 .vscode/
 .idea/
 
-# Cache e arquivos de build
+# Arquivos de build e cache
 dist/
 build/
-coverage/
 tmp/
 out/
 
-# Configurações do sistema operacional
-.DS_Store
-Thumbs.db
+# Cache do npm e do Yarn
+.npm/
+.yarn/
+.pnp/
+.pnp.js
+
+# Arquivos do ambiente (se usar variáveis de ambiente)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env*.local
